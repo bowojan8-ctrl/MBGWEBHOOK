@@ -85,12 +85,12 @@ cardStroke.Color = Color3.fromRGB(30,120,255); cardStroke.Thickness = 1.5
 
 local KLogo = Instance.new("TextLabel", Card)
 KLogo.BackgroundTransparency=1; KLogo.Size=UDim2.new(1,0,0,30); KLogo.Position=UDim2.new(0,0,0,18)
-KLogo.Font=Enum.Font.GothamBold; KLogo.Text="🎣 PAN HOOK"
+KLogo.Font=Enum.Font.GothamBold; KLogo.Text="🎣 Main Bareng Gengz"
 KLogo.TextColor3=Color3.fromRGB(60,140,255); KLogo.TextSize=18; KLogo.ZIndex=3
 
 local KVer = Instance.new("TextLabel", Card)
 KVer.BackgroundTransparency=1; KVer.Size=UDim2.new(1,0,0,16); KVer.Position=UDim2.new(0,0,0,50)
-KVer.Font=Enum.Font.Gotham; KVer.Text="v3.0 — Masukkan kode pembelian"
+KVer.Font=Enum.Font.Gotham; KVer.Text="v3.0 — KATA KUNCI"
 KVer.TextColor3=Color3.fromRGB(120,130,155); KVer.TextSize=10; KVer.ZIndex=3
 
 local InputBg = Instance.new("Frame", Card)
@@ -112,7 +112,7 @@ KeyInput.FocusLost:Connect(function() ib_stroke.Color=Color3.fromRGB(30,40,65) e
 local SubmitBtn = Instance.new("TextButton", Card)
 SubmitBtn.BackgroundColor3=Color3.fromRGB(30,120,255); SubmitBtn.BorderSizePixel=0
 SubmitBtn.Size=UDim2.new(1,-30,0,38); SubmitBtn.Position=UDim2.new(0,15,0,132)
-SubmitBtn.Font=Enum.Font.GothamBold; SubmitBtn.Text="✔ Verifikasi"
+SubmitBtn.Font=Enum.Font.GothamBold; SubmitBtn.Text="✔ LOGIN"
 SubmitBtn.TextColor3=Color3.new(1,1,1); SubmitBtn.TextSize=13; SubmitBtn.ZIndex=3
 Instance.new("UICorner", SubmitBtn).CornerRadius=UDim.new(0,8)
 
