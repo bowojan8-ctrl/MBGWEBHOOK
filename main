@@ -1,5 +1,5 @@
 -- ============================================================
---   PAN HOOK v3.0 | Fish It Webhook + Utility
+--   M B G v3.0 | Fish It Webhook + Utility
 --   by PanMancing01
 --   Update v3.0: Merge ITG Features, Safe Anti-Cheat
 -- ============================================================
@@ -614,7 +614,7 @@ HDivider.Position=UDim2.new(0,0,1,0); HDivider.Size=UDim2.new(1,0,0,1); HDivider
 
 local LogoLabel=Instance.new("TextLabel",Header)
 LogoLabel.BackgroundTransparency=1; LogoLabel.Position=UDim2.new(0,14,0,0); LogoLabel.Size=UDim2.new(0,160,1,0)
-LogoLabel.Font=Enum.Font.GothamBold; LogoLabel.Text="🎣 PAN HOOK"
+LogoLabel.Font=Enum.Font.GothamBold; LogoLabel.Text="🎣 Main Bareng Gengz"
 LogoLabel.TextColor3=Theme.AccentGlow; LogoLabel.TextSize=14; LogoLabel.TextXAlignment=Enum.TextXAlignment.Left; LogoLabel.ZIndex=6
 
 local VerLabel=Instance.new("TextLabel",Header)
@@ -872,9 +872,9 @@ CreateButton(Page_Webhook,"🔧 Test Webhook",Theme.Accent,function()
     if Current_Webhook=="" then ShowNotification("❌ Masukkan webhook URL dulu!",true) return end
     ShowNotification("⏳ Mengirim test...",false)
     task.spawn(function()
-        local payload={username="PAN HOOK",embeds={{title="🔧 Test Webhook!",color=0x1E78FF,
-            fields={{name="Status",value="✅ Webhook connected!",inline=true},{name="Script",value="PAN HOOK v3.0",inline=true}},
-            footer={text="PAN HOOK v3.0"}}}}
+        local payload={username="M B G",embeds={{title="🔧 Test Webhook!",color=0x1E78FF,
+            fields={{name="Status",value="✅ Webhook connected!",inline=true},{name="Script",value="M B G v3.0",inline=true}},
+            footer={text="M B G v3.0"}}}}
         local ok2=pcall(function() httpRequest({Url=Current_Webhook,Method="POST",Headers={["Content-Type"]="application/json"},Body=HttpService:JSONEncode(payload)}) end)
         if ok2 then ShowNotification("✅ Test berhasil!",false) else ShowNotification("❌ Gagal! Cek URL",true) end
     end)
@@ -891,9 +891,9 @@ CreateButton(Page_Webhook,"🐟 Test Secret",Color3.fromRGB(50,180,120),function
             {name="⚖️ Berat",  value="`999.9kg`", inline=true},
             {name="✨ Mutasi",  value="`N/A`", inline=true},
         }
-        local embed={title="Alhamdulillah anak soleh dapet secret💦 [TEST]",color=65431,fields=fields,footer={text="PAN HOOK v3.0 • TEST"},timestamp=os.date("!%Y-%m-%dT%H:%M:%SZ")}
+        local embed={title="Alhamdulillah anak soleh dapet secret💦 [TEST]",color=65431,fields=fields,footer={text="M B G v3.0 • TEST"},timestamp=os.date("!%Y-%m-%dT%H:%M:%SZ")}
         local ok2,err2=pcall(function()
-            httpRequest({Url=Current_Webhook,Method="POST",Headers={["Content-Type"]="application/json"},Body=HttpService:JSONEncode({username="PAN HOOK",embeds={embed}})})
+            httpRequest({Url=Current_Webhook,Method="POST",Headers={["Content-Type"]="application/json"},Body=HttpService:JSONEncode({username="M B G",embeds={embed}})})
         end)
         if ok2 then ShowNotification("✅ Terkirim!",false)
         else ShowNotification("❌ Gagal: "..tostring(err2),true) end
@@ -912,9 +912,9 @@ CreateButton(Page_Webhook,"👁️ Test Forgotten",Color3.fromRGB(180,0,180),fun
             {name="✨ Mutasi",value="`N/A`",inline=true},
         }
         local forgottenImgUrl=GetFishImage("Sea Eater") or ""
-        local embed={title="KELASS KINK CAIR CAIR 💀🔥 [TEST]",color=0xFF00FF,fields=fields,image={url=forgottenImgUrl},footer={text="PAN HOOK v3.0 • TEST"},timestamp=os.date("!%Y-%m-%dT%H:%M:%SZ")}
+        local embed={title="KELASS KINK CAIR CAIR 💀🔥 [TEST]",color=0xFF00FF,fields=fields,image={url=forgottenImgUrl},footer={text="M B G v3.0 • TEST"},timestamp=os.date("!%Y-%m-%dT%H:%M:%SZ")}
         local ok,err=pcall(function()
-            httpRequest({Url=Current_Webhook,Method="POST",Headers={["Content-Type"]="application/json"},Body=HttpService:JSONEncode({username="PAN HOOK 💀",content="🔥**FORGOTTEN ☠️ DETECTED**🔥 @everyone",embeds={embed}})})
+            httpRequest({Url=Current_Webhook,Method="POST",Headers={["Content-Type"]="application/json"},Body=HttpService:JSONEncode({username="M B G 💀",content="🔥**FORGOTTEN ☠️ DETECTED**🔥 @everyone",embeds={embed}})})
         end)
         if ok then ShowNotification("✅ Test Forgotten terkirim!",false)
         else ShowNotification("❌ Gagal: "..tostring(err),true) end
@@ -930,7 +930,7 @@ local adminInput=CreateInput(Page_Admin,"Admin Hook","https://discord.com/api/we
 CreateButton(Page_Admin,"🔧 Test Admin Hook",Theme.Accent,function()
     if Current_Admin_Webhook=="" then ShowNotification("❌ Masukkan admin hook dulu!",true) return end
     task.spawn(function()
-        local payload={username="PAN HOOK",embeds={{title="🔧 Test Admin Hook!",color=0x1E78FF,footer={text="PAN HOOK v3.0"}}}}
+        local payload={username="M B G",embeds={{title="🔧 Test Admin Hook!",color=0x1E78FF,footer={text="M B G v3.0"}}}}
         pcall(function() httpRequest({Url=Current_Admin_Webhook,Method="POST",Headers={["Content-Type"]="application/json"},Body=HttpService:JSONEncode(payload)}) end)
         ShowNotification("✅ Test berhasil!",false)
     end)
@@ -979,7 +979,7 @@ CreateButton(Page_Admin,"📋 Send Player On Server",Theme.Accent,function()
     local all=Players:GetPlayers(); local str="Current Players ("..#all.."):\n\n"
     for i,p in ipairs(all) do str=str..i..". "..p.DisplayName.." (@"..p.Name..")\n" end
     task.spawn(function()
-        local payload={username="PAN HOOK",embeds={{title="👥 Player On Server",description="```\n"..str.."\n```",color=0x1E78FF,footer={text="PAN HOOK v3.0"}}}}
+        local payload={username="M B G",embeds={{title="👥 Player On Server",description="```\n"..str.."\n```",color=0x1E78FF,footer={text="M B G v3.0"}}}}
         pcall(function() httpRequest({Url=Current_Admin_Webhook,Method="POST",Headers={["Content-Type"]="application/json"},Body=HttpService:JSONEncode(payload)}) end)
     end)
     ShowNotification("✅ Terkirim!",false)
@@ -997,7 +997,7 @@ CreateButton(Page_Admin,"⚠️ Send Player NOT On Server",Color3.fromRGB(200,10
     local txt= #missing==0 and "Semua player tagged ada di server!" or "Missing ("..#missing.."):\n"
     for i,v in ipairs(missing) do txt=txt..i..". "..v.."\n" end
     task.spawn(function()
-        local payload={username="PAN HOOK",embeds={{title="⚠️ Player NOT On Server",description="```\n"..txt.."\n```",color=0xFF8C00,footer={text="PAN HOOK v3.0"}}}}
+        local payload={username="M B G",embeds={{title="⚠️ Player NOT On Server",description="```\n"..txt.."\n```",color=0xFF8C00,footer={text="M B G v3.0"}}}}
         pcall(function() httpRequest({Url=Current_Admin_Webhook,Method="POST",Headers={["Content-Type"]="application/json"},Body=HttpService:JSONEncode(payload)}) end)
     end)
     ShowNotification("✅ Terkirim!",false)
@@ -1280,7 +1280,7 @@ local function CheckAndSend(msg)
             local pingContent2=GetDiscordId(p) and "GG! <@"..GetDiscordId(p)..">" or ""
             local runicImgUrl=GetFishImage("Runic Enchant Stone") or nil
             local fields={{name="👤 Player",value="**"..spoiledName2.."**",inline=false},{name="🔮 Item",value="`Runic Enchant Stone`",inline=true}}
-            SendWebhookRaw(Current_Webhook,{username="PAN HOOK",content=pingContent2,embeds={{title="🔮 RUNIC ENCHANT STONE!",color=0xFF0000,fields=fields,thumbnail={url=runicImgUrl},footer={text="PAN HOOK v3.0"},timestamp=os.date("!%Y-%m-%dT%H:%M:%SZ")}}})
+            SendWebhookRaw(Current_Webhook,{username="M B G",content=pingContent2,embeds={{title="🔮 RUNIC ENCHANT STONE!",color=0xFF0000,fields=fields,thumbnail={url=runicImgUrl},footer={text="M B G v3.0"},timestamp=os.date("!%Y-%m-%dT%H:%M:%SZ")}}})
             UpdateStat("Total")
         end
         return
@@ -1304,7 +1304,7 @@ local function CheckAndSend(msg)
         local avatarUrl=GetPlayerAvatar(userId)
         local pingContent=GetDiscordId(p) and "GG! <@"..GetDiscordId(p)..">" or ""
         local fields={{name="👤 Player",value="**"..spoiledName.."**",inline=false},{name="🔮 Item",value="`Evolved Enchant Stone`",inline=true}}
-        SendWebhookRaw(Current_Webhook,{username="PAN HOOK",content=pingContent,embeds={{title="🔮 EVOLVED ENCHANT STONE!",color=0xA855F7,fields=fields,thumbnail={url=avatarUrl},footer={text="PAN HOOK v3.0"},timestamp=os.date("!%Y-%m-%dT%H:%M:%SZ")}}})
+        SendWebhookRaw(Current_Webhook,{username="M B G",content=pingContent,embeds={{title="🔮 EVOLVED ENCHANT STONE!",color=0xA855F7,fields=fields,thumbnail={url=avatarUrl},footer={text="M B G v3.0"},timestamp=os.date("!%Y-%m-%dT%H:%M:%SZ")}}})
         UpdateStat("Evolved"); return
     end
 
@@ -1321,7 +1321,7 @@ local function CheckAndSend(msg)
         local pingContent=GetDiscordId(p) and "GG! <@"..GetDiscordId(p)..">" or ""
         local eggyImgUrl=GetFishImage("Eggy Enchant Stone") or nil
         local fields={{name="👤 Player",value="**"..spoiledName.."**",inline=false},{name="🥚 Item",value="`Eggy Enchant Stone`",inline=true}}
-        SendWebhookRaw(Current_Webhook,{username="PAN HOOK",content=pingContent,embeds={{title="🥚 EGGY ENCHANT STONE!",color=0xFF0000,fields=fields,thumbnail={url=eggyImgUrl},footer={text="PAN HOOK v3.0"},timestamp=os.date("!%Y-%m-%dT%H:%M:%SZ")}}})
+        SendWebhookRaw(Current_Webhook,{username="M B G",content=pingContent,embeds={{title="🥚 EGGY ENCHANT STONE!",color=0xFF0000,fields=fields,thumbnail={url=eggyImgUrl},footer={text="M B G v3.0"},timestamp=os.date("!%Y-%m-%dT%H:%M:%SZ")}}})
         UpdateStat("Total"); return
     end
 
@@ -1344,7 +1344,7 @@ local function CheckAndSend(msg)
                 local playerObj=Players:FindFirstChild(p); local userId=playerObj and playerObj.UserId or 0
                 local avatarUrl=GetPlayerAvatar(userId); local pingContent=GetDiscordId(p) and "GG! <@"..GetDiscordId(p)..">" or ""
                 local fields={{name="👤 Player",value="**"..spoiledName.."**",inline=false},{name="🐟 Ikan",value="`"..finalItem.."`",inline=true},{name="✨ Mutasi",value="`Crystalized`",inline=true},{name="⚖️ Berat",value="`"..w.."`",inline=true}}
-                SendWebhookRaw(Current_Webhook,{username="PAN HOOK",content=pingContent,embeds={{title="✨ CRYSTALIZED MUTATION!",color=0x3BA5FF,fields=fields,thumbnail={url=avatarUrl},footer={text="PAN HOOK v3.0"},timestamp=os.date("!%Y-%m-%dT%H:%M:%SZ")}}})
+                SendWebhookRaw(Current_Webhook,{username="M B G",content=pingContent,embeds={{title="✨ CRYSTALIZED MUTATION!",color=0x3BA5FF,fields=fields,thumbnail={url=avatarUrl},footer={text="M B G v3.0"},timestamp=os.date("!%Y-%m-%dT%H:%M:%SZ")}}})
                 UpdateStat("Crystalized"); return
             end
         end
@@ -1382,10 +1382,10 @@ local function CheckAndSend(msg)
                 fields=fields,
                 image={url=fishImgUrl},
                 thumbnail={url=avatarUrl},
-                footer={text="PAN HOOK v3.0 • FORGOTTEN TIER"},
+                footer={text="M B Gv3.0 • FORGOTTEN TIER"},
                 timestamp=os.date("!%Y-%m-%dT%H:%M:%SZ")
             }
-            SendWebhookRaw(Current_Webhook,{username="PAN HOOK 💀",content="🔥**FORGOTTEN ☠️ DETECTED**🔥 @everyone",embeds={embed}},true)
+            SendWebhookRaw(Current_Webhook,{username="M B G 💀",content="🔥**FORGOTTEN ☠️ DETECTED**🔥 @everyone",embeds={embed}},true)
             UpdateStat("Secret")
         end
         return
@@ -1396,7 +1396,7 @@ local function CheckAndSend(msg)
         if Settings.SecretEnabled then
             local fields={{name="👤 Player",value="**"..spoiledName.."**",inline=false},{name="🐟 Ikan",value="`"..data.Item.."`",inline=true},{name="⭐ Rarity",value="`SECRET`",inline=true},{name="⚖️ Berat",value="`"..data.Weight.."`",inline=true},{name="✨ Mutasi",value="`"..mutDisplay.."`",inline=true}}
             local sImgUrl= GetFishImage(data.Item) or avatarUrl
-            SendWebhookRaw(Current_Webhook,{username="PAN HOOK",content=pingContent,embeds={{title="Alhamdulillah anak soleh dapet secret💦",color=65431,fields=fields,image={url=sImgUrl},thumbnail={url=avatarUrl},footer={text="PAN HOOK v3.0"},timestamp=os.date("!%Y-%m-%dT%H:%M:%SZ")}}},true)
+            SendWebhookRaw(Current_Webhook,{username="M B G",content=pingContent,embeds={{title="Alhamdulillah anak soleh dapet secret💦",color=65431,fields=fields,image={url=sImgUrl},thumbnail={url=avatarUrl},footer={text="M B G v3.0"},timestamp=os.date("!%Y-%m-%dT%H:%M:%SZ")}}},true)
             UpdateStat("Secret")
         end
         return
@@ -1406,7 +1406,7 @@ local function CheckAndSend(msg)
     if Settings.RubyEnabled and lowerItem:find("ruby") and data.Mutation and data.Mutation:lower():find("gemstone") then
         local fields={{name="👤 Player",value="**"..spoiledName.."**",inline=false},{name="🐟 Ikan",value="`"..data.Item.."`",inline=true},{name="⚖️ Berat",value="`"..data.Weight.."`",inline=true},{name="🧬 Mutasi",value="`Gemstone`",inline=true}}
         local rubyImgUrl=GetFishImage("Ruby") or nil
-        SendWebhookRaw(Current_Webhook,{username="PAN HOOK",content=pingContent,embeds={{title="💎 Ruby Gemstone!",color=0x32DCBC,fields=fields,thumbnail={url=rubyImgUrl},footer={text="PAN HOOK v3.0"},timestamp=os.date("!%Y-%m-%dT%H:%M:%SZ")}}})
+        SendWebhookRaw(Current_Webhook,{username="M B G",content=pingContent,embeds={{title="💎 Ruby Gemstone!",color=0x32DCBC,fields=fields,thumbnail={url=rubyImgUrl},footer={text="M B G v3.0"},timestamp=os.date("!%Y-%m-%dT%H:%M:%SZ")}}})
         UpdateStat("Ruby"); return
     end
 
@@ -1420,7 +1420,7 @@ local function CheckAndSend(msg)
         if settingKey and Settings[settingKey] then
             local fields={{name="👤 Player",value="**"..maskedName.."**",inline=false},{name="🐟 Ikan",value="`"..data.Item.."`",inline=true},{name="⭐ Rarity",value="`"..rarityKey.."`",inline=true},{name="⚖️ Berat",value="`"..data.Weight.."`",inline=true},{name="✨ Mutasi",value="`"..mutDisplay.."`",inline=true}}
             local fishImg = GetFishImage(data.Item)
-            local payload={username="PAN HOOK",embeds={{title="**DAPATNYA AMPAS DEK, MENDING GALER AJA**",color=colorMap[rarityKey] or 0xFFFFFF,fields=fields,thumbnail={url=fishImg or avatarUrl},footer={text="PAN HOOK v3.0"},timestamp=os.date("!%Y-%m-%dT%H:%M:%SZ")}}}
+            local payload={username="M B G",embeds={{title="**DAPATNYA AMPAS DEK, MENDING GALER AJA**",color=colorMap[rarityKey] or 0xFFFFFF,fields=fields,thumbnail={url=fishImg or avatarUrl},footer={text="M B G v3.0"},timestamp=os.date("!%Y-%m-%dT%H:%M:%SZ")}}}
             SendWebhookRaw(Current_Webhook,payload)
         end
     end
@@ -1465,7 +1465,7 @@ local function WatchBackpack(bp)
             if tick()-CaveCrystalDebounce>10 then
                 CaveCrystalDebounce=tick()
                 local fields={{name="👤 Player",value="**"..MaskName(Players.LocalPlayer.Name).."**",inline=false},{name="⛏️ Event",value="`Cave Crystal Ditemukan!`",inline=true}}
-                SendWebhookRaw(Current_Webhook,{username="PAN HOOK",embeds={{title="⛏️ Cave Crystal Event!",color=0xFFD700,fields=fields,footer={text="PAN HOOK v3.0"},timestamp=os.date("!%Y-%m-%dT%H:%M:%SZ")}}})
+                SendWebhookRaw(Current_Webhook,{username="M B G",embeds={{title="⛏️ Cave Crystal Event!",color=0xFFD700,fields=fields,footer={text="M B G v3.0"},timestamp=os.date("!%Y-%m-%dT%H:%M:%SZ")}}})
                 UpdateStat("CaveCrystal")
             end
         end
@@ -1486,7 +1486,7 @@ table.insert(Connections,Players.PlayerAdded:Connect(function(player)
     if Settings.LogEnabled and Current_Log_Webhook~="" then
         task.spawn(function()
             local avatarUrl=GetPlayerAvatar(player.UserId)
-            local payload={username="PAN HOOK",embeds={{title="👋 Player Joined",description="**@"..MaskName(player.Name).."** bergabung ke server.",color=0x32DC32,thumbnail={url=avatarUrl},footer={text="PAN HOOK v3.0"},timestamp=os.date("!%Y-%m-%dT%H:%M:%SZ")}}}
+            local payload={username="M B G",embeds={{title="👋 Player Joined",description="**@"..MaskName(player.Name).."** bergabung ke server.",color=0x32DC32,thumbnail={url=avatarUrl},footer={text="M B G v3.0"},timestamp=os.date("!%Y-%m-%dT%H:%M:%SZ")}}}
             SendWebhookRaw(Current_Log_Webhook,payload)
         end)
     end
@@ -1500,7 +1500,7 @@ table.insert(Connections,Players.PlayerAdded:Connect(function(player)
             task.spawn(function()
                 local id1=(TagList[1] and TagList[1][2]) or ""; local id2=(TagList[2] and TagList[2][2]) or ""
                 local tags= (id1~="" and "<@"..id1.."> " or "")..(id2~="" and "<@"..id2..">" or "")
-                local payload={username="PAN HOOK",content="⚠️ Foreign Player! "..tags,embeds={{title="🕵️ Player Asing Terdeteksi!",description="```\nName: "..player.DisplayName.."\nUsername: "..player.Name.."\n```",color=0xFF4444,thumbnail={url=GetPlayerAvatar(player.UserId)},footer={text="PAN HOOK v3.0"},timestamp=os.date("!%Y-%m-%dT%H:%M:%SZ")}}}
+                local payload={username="M B G",content="⚠️ Foreign Player! "..tags,embeds={{title="🕵️ Player Asing Terdeteksi!",description="```\nName: "..player.DisplayName.."\nUsername: "..player.Name.."\n```",color=0xFF4444,thumbnail={url=GetPlayerAvatar(player.UserId)},footer={text="M B G v3.0"},timestamp=os.date("!%Y-%m-%dT%H:%M:%SZ")}}}
                 SendWebhookRaw(Current_Admin_Webhook,payload)
             end)
         end
@@ -1511,7 +1511,7 @@ table.insert(Connections,Players.PlayerRemoving:Connect(function(p)
     if not ScriptActive then return end
     if Settings.LogEnabled and Current_Log_Webhook~="" then
         task.spawn(function()
-            local payload={username="PAN HOOK",embeds={{title="🚪 Player Left",description="**@"..MaskName(p.Name).."** meninggalkan server.",color=0xFF4444,thumbnail={url=GetPlayerAvatar(p.UserId)},footer={text="PAN HOOK v3.0"},timestamp=os.date("!%Y-%m-%dT%H:%M:%SZ")}}}
+            local payload={username="M B G",embeds={{title="🚪 Player Left",description="**@"..MaskName(p.Name).."** meninggalkan server.",color=0xFF4444,thumbnail={url=GetPlayerAvatar(p.UserId)},footer={text="M B G v3.0"},timestamp=os.date("!%Y-%m-%dT%H:%M:%SZ")}}}
             SendWebhookRaw(Current_Log_Webhook,payload)
         end)
     end
@@ -1528,7 +1528,7 @@ task.spawn(function()
             local ok2,ping=pcall(function() return Stats.Network.ServerStatsItem["Data Ping"]:GetValue() end)
             if ok2 and ping>500 and tick()-LastPingAlert>60 then
                 LastPingAlert=tick()
-                local payload={username="PAN HOOK",content="⚠️ **HIGH PING DETECTED!**",embeds={{title="📡 Server Lag Alert",description="```\nPing: "..math.floor(ping).." ms\n```",color=0xFFFF00,footer={text="PAN HOOK v3.0"}}}}
+                local payload={username="M B G",content="⚠️ **HIGH PING DETECTED!**",embeds={{title="📡 Server Lag Alert",description="```\nPing: "..math.floor(ping).." ms\n```",color=0xFFFF00,footer={text="M B G v3.0"}}}}
                 SendWebhookRaw(Current_Admin_Webhook,payload)
             end
         end
@@ -1552,7 +1552,7 @@ task.spawn(function()
             if #missing>0 then
                 local txt="Missing ("..#missing.."):\n"
                 for i,v in ipairs(missing) do txt=txt..i..". "..v.."\n" end
-                local payload={username="PAN HOOK",embeds={{title="⏰ Player NOT On Server",description="```\n"..txt.."\n```",color=0xFF8C00,footer={text="PAN HOOK v3.0"}}}}
+                local payload={username="M B G",embeds={{title="⏰ Player NOT On Server",description="```\n"..txt.."\n```",color=0xFF8C00,footer={text="M B G v3.0"}}}}
                 SendWebhookRaw(Current_Admin_Webhook,payload)
             end
         end
@@ -1564,5 +1564,5 @@ end)
 -- ============================================================
 
 -- ============================================================
-print("✅ PAN HOOK v3.0 Loaded!")
-ShowNotification("🎣 PAN HOOK v3.0 Ready!",false)
+print("✅ M B G v3.0 Loaded!")
+ShowNotification("🎣 M B G v3.0 Ready!",false)
