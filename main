@@ -102,7 +102,7 @@ ib_stroke.Color=Color3.fromRGB(30,40,65); ib_stroke.Thickness=1.5
 
 local KeyInput = Instance.new("TextBox", InputBg)
 KeyInput.BackgroundTransparency=1; KeyInput.Size=UDim2.new(1,-20,1,0); KeyInput.Position=UDim2.new(0,10,0,0)
-KeyInput.Font=Enum.Font.GothamMedium; KeyInput.PlaceholderText="PANHOOK-XXXX-XXXX-XXXX"
+KeyInput.Font=Enum.Font.GothamMedium; KeyInput.PlaceholderText="HUBUNGI UWOK UNTUK KUNCI"
 KeyInput.PlaceholderColor3=Color3.fromRGB(60,70,90); KeyInput.Text=""
 KeyInput.TextColor3=Color3.fromRGB(230,235,245); KeyInput.TextSize=12
 KeyInput.ClearTextOnFocus=false; KeyInput.ZIndex=4
