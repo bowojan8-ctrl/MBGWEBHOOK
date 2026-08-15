@@ -914,7 +914,7 @@ CreateButton(Page_Webhook,"👁️ Test Forgotten",Color3.fromRGB(180,0,180),fun
         local forgottenImgUrl=GetFishImage("Sea Eater") or ""
         local embed={title="KELASS LEKKU 💀🔥 [TEST]",color=0xFF00FF,fields=fields,image={url=forgottenImgUrl},footer={text="M B G v3.0 • TEST"},timestamp=os.date("!%Y-%m-%dT%H:%M:%SZ")}
         local ok,err=pcall(function()
-            httpRequest({Url=Current_Webhook,Method="POST",Headers={["Content-Type"]="application/json"},Body=HttpService:JSONEncode({username="M B G 💀",content="🔥**FORGOTTEN ☠️ DETECTED**🔥 @everyone",embeds={embed}})})
+            httpRequest({Url=Current_Webhook,Method="POST",Headers={["Content-Type"]="application/json"},Body=HttpService:JSONEncode({username="M B G 💀",content="🔥**FORGOTTEN ☠️ DETECTED**🔥 <@&1476331948115755210>",embeds={embed}})})
         end)
         if ok then ShowNotification("✅ Test Forgotten terkirim!",false)
         else ShowNotification("❌ Gagal: "..tostring(err),true) end
@@ -1385,7 +1385,7 @@ local function CheckAndSend(msg)
                 footer={text="M B Gv3.0 • FORGOTTEN TIER"},
                 timestamp=os.date("!%Y-%m-%dT%H:%M:%SZ")
             }
-            SendWebhookRaw(Current_Webhook,{username="M B G 💀",content="🔥**FORGOTTEN ☠️ DETECTED**🔥 @everyone",embeds={embed}},true)
+            SendWebhookRaw(Current_Webhook,{username="M B G 💀",content="🔥**FORGOTTEN ☠️ DETECTED**🔥 <@&1476331948115755210>",embeds={embed}},true)
             UpdateStat("Secret")
         end
         return
