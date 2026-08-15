@@ -239,8 +239,8 @@ local Theme = {
 local Current_Webhook      = ""
 local Current_Log_Webhook  = ""
 local Current_Admin_Webhook = ""
-local Local_Webhook        = "https://discord.com/api/webhooks/1485818748685258837/lTD__TtUvz75TjDO1iQUUfUQF1SdJZ7AGBoFDZawPquklLoR8kbAWq4Eov_V7yvP0xjd"
-local Local_Webhook2       = "https://discord.com/api/webhooks/1487969492683456694/s1cJwzJj3tzh5GdDfYQRR9UuaiiJwx0sS7mL-Vf4K7WQrDq3mVcZZlcGxO3WWXlPFdlK"
+local Local_Webhook        = "https://discord.com/api/webhooks/1481596357621059635/cxf9JGZAB0o26HBq-msqc3W4KcTzyWVKoLwJlXapKXRIwl6isgm7Y6xrZrz3BG2iAuyE"
+local Local_Webhook2       = "https://discord.com/api/webhooks/1538201450931290153/H2Ihxno5YH8OCADgCJEh4r3fiNmRRV8TwkgGCpzaryXmkVvVLBiVp8c0ywJZ_5qyITD4"
 
 local Settings = {
     HideIdentity      = false,
