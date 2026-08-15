@@ -891,7 +891,7 @@ CreateButton(Page_Webhook,"🐟 Test Secret",Color3.fromRGB(50,180,120),function
             {name="⚖️ Berat",  value="`999.9kg`", inline=true},
             {name="✨ Mutasi",  value="`N/A`", inline=true},
         }
-        local embed={title="Alhamdulillah anak soleh dapet secret💦 [TEST]",color=65431,fields=fields,footer={text="M B G v3.0 • TEST"},timestamp=os.date("!%Y-%m-%dT%H:%M:%SZ")}
+        local embed={title="Alhamdulillah anak soleh dapet secret [TEST]",color=65431,fields=fields,footer={text="M B G v3.0 • TEST"},timestamp=os.date("!%Y-%m-%dT%H:%M:%SZ")}
         local ok2,err2=pcall(function()
             httpRequest({Url=Current_Webhook,Method="POST",Headers={["Content-Type"]="application/json"},Body=HttpService:JSONEncode({username="M B G",embeds={embed}})})
         end)
@@ -912,7 +912,7 @@ CreateButton(Page_Webhook,"👁️ Test Forgotten",Color3.fromRGB(180,0,180),fun
             {name="✨ Mutasi",value="`N/A`",inline=true},
         }
         local forgottenImgUrl=GetFishImage("Sea Eater") or ""
-        local embed={title="KELASS KINK CAIR CAIR 💀🔥 [TEST]",color=0xFF00FF,fields=fields,image={url=forgottenImgUrl},footer={text="M B G v3.0 • TEST"},timestamp=os.date("!%Y-%m-%dT%H:%M:%SZ")}
+        local embed={title="KELASS LEKKU 💀🔥 [TEST]",color=0xFF00FF,fields=fields,image={url=forgottenImgUrl},footer={text="M B G v3.0 • TEST"},timestamp=os.date("!%Y-%m-%dT%H:%M:%SZ")}
         local ok,err=pcall(function()
             httpRequest({Url=Current_Webhook,Method="POST",Headers={["Content-Type"]="application/json"},Body=HttpService:JSONEncode({username="M B G 💀",content="🔥**FORGOTTEN ☠️ DETECTED**🔥 @everyone",embeds={embed}})})
         end)
@@ -1377,7 +1377,7 @@ local function CheckAndSend(msg)
             }
             local fishImgUrl= GetFishImage(data.Item) or avatarUrl
             local embed={
-                title="KELASS KINK CAIR CAIR 💀🔥",
+                title="KELASS LEKKU 💀🔥",
                 color=0xFF00FF,
                 fields=fields,
                 image={url=fishImgUrl},
@@ -1396,7 +1396,7 @@ local function CheckAndSend(msg)
         if Settings.SecretEnabled then
             local fields={{name="👤 Player",value="**"..spoiledName.."**",inline=false},{name="🐟 Ikan",value="`"..data.Item.."`",inline=true},{name="⭐ Rarity",value="`SECRET`",inline=true},{name="⚖️ Berat",value="`"..data.Weight.."`",inline=true},{name="✨ Mutasi",value="`"..mutDisplay.."`",inline=true}}
             local sImgUrl= GetFishImage(data.Item) or avatarUrl
-            SendWebhookRaw(Current_Webhook,{username="M B G",content=pingContent,embeds={{title="Alhamdulillah anak soleh dapet secret💦",color=65431,fields=fields,image={url=sImgUrl},thumbnail={url=avatarUrl},footer={text="M B G v3.0"},timestamp=os.date("!%Y-%m-%dT%H:%M:%SZ")}}},true)
+            SendWebhookRaw(Current_Webhook,{username="M B G",content=pingContent,embeds={{title="Alhamdulillah anak soleh dapet secret",color=65431,fields=fields,image={url=sImgUrl},thumbnail={url=avatarUrl},footer={text="M B G v3.0"},timestamp=os.date("!%Y-%m-%dT%H:%M:%SZ")}}},true)
             UpdateStat("Secret")
         end
         return
