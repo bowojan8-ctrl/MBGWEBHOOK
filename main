@@ -26,7 +26,7 @@ end
 -- ============================================================
 -- KEY SYSTEM
 -- ============================================================
-local KEY_URL = "https://raw.githubusercontent.com/okmantapsip-max/anuan/main/key.json"
+local KEY_URL = "https://raw.githubusercontent.com/bowojan8-ctrl/MBGWEBHOOK/refs/heads/main/KEY.json"
 
 local function CheckKey(key)
     local ok, res = pcall(function()
