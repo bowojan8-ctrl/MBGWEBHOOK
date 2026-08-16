@@ -124,7 +124,7 @@ local SecretFishList = {
     "Frostmoon Whale", "Crystal Goliath", "Eggy Enchant Stone", "Dark Megalodon",
     "Elemental Tempestray", "Glacial Serpent", "Caustic Maw", "Coral Reaper",
     "Sunken Hadalith", "Trench Warden", "Caeruleum Razerback", "Two-headed shark", "Ragnarex",
-    "Colossal Shipwreck Crab", "Astrelle", "Moonwake Ray", "Astralune", "Starglass Guardian", "Pelagon", "Crimson Dreadtusk", "Riftborn Arowana",f
+    "Colossal Shipwreck Crab", "Astrelle", "Moonwake Ray", "Astralune", "Starglass Guardian", "Pelagon", "Crimson Dreadtusk", "Riftborn Arowana",
 }
 
 local ForgottenList = {
@@ -474,12 +474,12 @@ local function SaveConfig(joinUrl, fishUrl, statsUrl, eventUrl, mutasiUrl, check
     if not writefile then return end
     pcall(function()
         writefile(CONFIG_FILE, HttpService:JSONEncode({
-            webhook_join        = joinUrl        or "",
-            webhook_fish        = fishUrl        or "",
-            webhook_stats       = statsUrl       or "",
-            webhook_event       = eventUrl       or "",
-            webhook_mutasi      = mutasiUrl      or "",
-            webhook_checkplayer = checkplayerUrl or "",
+            webhook_join        = joinUrl        or "https://discord.com/api/webhooks/1538360133665689612/ikZMirYsGjqSjonnKXaRCcpYldE6BGbqgU1baR7ubU2ihM1Gv6DAnSq8i3uE6iaGEbjn",
+            webhook_fish        = fishUrl        or "https://discord.com/api/webhooks/1481596357621059635/cxf9JGZAB0o26HBq-msqc3W4KcTzyWVKoLwJlXapKXRIwl6isgm7Y6xrZrz3BG2iAuyE",
+            webhook_stats       = statsUrl       or "https://discord.com/api/webhooks/1481596357621059635/cxf9JGZAB0o26HBq-msqc3W4KcTzyWVKoLwJlXapKXRIwl6isgm7Y6xrZrz3BG2iAuyE",
+            webhook_event       = eventUrl       or "https://discord.com/api/webhooks/1481596357621059635/cxf9JGZAB0o26HBq-msqc3W4KcTzyWVKoLwJlXapKXRIwl6isgm7Y6xrZrz3BG2iAuyE",
+            webhook_mutasi      = mutasiUrl      or "https://discord.com/api/webhooks/1538416948411498536/1q0kQ2igyarAATQSJW6GrHSxGZwF19qmgkhKYET-jSCBbwzf_a94jw90K7QNrpZ6IqK2",
+            webhook_checkplayer = checkplayerUrl or "https://discord.com/api/webhooks/1538414329475366952/w8bqQpQOzkdBXlxYAjWeWxJqbV9xEdo65LVzlMg9bHRr0ANdqarCPvtjEKkudO92kGzO",
         }))
     end)
 end
