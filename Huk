@@ -1056,7 +1056,7 @@ local function SendEventWebhook(eventData, rawText)
             eventData.description,
             eventData.color,
             {
-                { name = SEP .. " Host Server",  value = "**" .. Players.LocalPlayer.Name .. "**",              inline = true },
+                { name = SEP .. " Host Server",  value = "SERVER BANG ADULLLLLLLLLL",              inline = true },
                 { name = SEP .. " Total Player", value = "**" .. tostring(#Players:GetPlayers()) .. "** orang", inline = true },
                 { name = SEP .. " Waktu Mulai",  value = os.date("%H:%M:%S"),                                   inline = true },
             },
