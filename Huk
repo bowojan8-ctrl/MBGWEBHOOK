@@ -1364,9 +1364,9 @@ local function HookChat()
             if msg.TextSource == nil then CheckAndSend(text) end
 
             -- Command manual buat trigger "Check Player On Server" kapan aja.
-            -- Ketik !checkplayer di chat game buat langsung kirim ke webhook.
+            -- Ketik !MBG di chat game buat langsung kirim ke webhook.
             local lowerText = Trim(string.lower(text))
-            if lowerText == "!checkplayer" then
+            if lowerText == "!MBG" then
                 SendPlayerCheckWebhook()
             end
         end)
@@ -1382,7 +1382,7 @@ local function HookChat()
                     CheckAndSend(d.Message)
                 end
                 local trimmedMsg = Trim(lowerMsg)
-                if trimmedMsg == "!checkplayer" then
+                if trimmedMsg == "!MBG" then
                     SendPlayerCheckWebhook()
                 end
             end)
@@ -1412,7 +1412,7 @@ local function StartMonitoring()
     StartAfkMonitor() -- mulai loop deteksi idle/gak mancing (1 jam tanpa catch)
 
     -- NOTE: webhook "Check Player On Server" cuma kekirim kalau di-trigger manual
-    -- (klik tombol CHECK PLAYER di panel, atau ketik "!checkplayer" di chat game).
+    -- (klik tombol CHECK PLAYER di panel, atau ketik "!MBG" di chat game).
     -- Gak ada loop auto-send / rekap otomatis lagi.
 
     for _, p in ipairs(allPlayers) do
