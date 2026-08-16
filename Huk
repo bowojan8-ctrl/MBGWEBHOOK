@@ -124,12 +124,12 @@ local SecretFishList = {
     "Frostmoon Whale", "Crystal Goliath", "Eggy Enchant Stone", "Dark Megalodon",
     "Elemental Tempestray", "Glacial Serpent", "Caustic Maw", "Coral Reaper",
     "Sunken Hadalith", "Trench Warden", "Caeruleum Razerback", "Two-headed shark", "Ragnarex",
-    "Colossal Shipwreck Crab", "Astrelle", "Moonwake Ray", "Astralune", "Starglass Guardian", "Pelagon",
+    "Colossal Shipwreck Crab", "Astrelle", "Moonwake Ray", "Astralune", "Starglass Guardian", "Pelagon", "Crimson Dreadtusk", "Riftborn Arowana",f
 }
 
 local ForgottenList = {
     "Sea Eater", "Thunderzilla", "Iridesca", "Frostbite Leviathan", "Fluorivane",
-    "Cerulean Dragon", "Crystalline Behemoth", "Trench Warden", "Ragnarex", "Astralune",
+    "Cerulean Dragon", "Crystalline Behemoth", "Trench Warden", "Ragnarex", "Astralune", "Crimson Dreadtusk",
 }
 
 local MutasiList = {
@@ -266,6 +266,8 @@ local FishChanceData = {
     ["Astralune"] = "1 in 20M",
     ["Starglass Guardian"] = "1 in 3M",
     ["Pelagon"] = "1 in 4.5M",
+    ["Riftborn Arowana"] = "1 in 4.5M",
+    ["Crimson Dreadtusk"] ="1 in 20M",
 }
 
 local NP = "https://raw.githubusercontent.com/revkatomy-max/new-pisit-image/main/"
@@ -355,6 +357,8 @@ local FishImageURL = {
 ["Moonwake Ray"] = "https://raw.githubusercontent.com/revkatomy-max/new-pisit-image/main/1000188340.png",
 ["Pelagon"] = "https://raw.githubusercontent.com/revkatomy-max/new-pisit-image/main/1000192226%20(1).png",
 ["Starglass Guardian"] = "https://raw.githubusercontent.com/revkatomy-max/new-pisit-image/main/1000192227%20(1).png",
+["Riftborn Arowana"] = "https://raw.githubusercontent.com/revkatomy-max/new-pisit-image/main/1000195428.png",
+["Crimson Dreadtusk"] = "https://raw.githubusercontent.com/revkatomy-max/new-pisit-image/main/1000195427.png",
     -- TODO: tambahin URL gambar buat "Shiny Hammerhead Shark" di sini biar thumbnail
     -- Mythic Fish Detected muncul, contoh:
     -- ["Shiny Hammerhead Shark"] = NP .. "namafile.png",
