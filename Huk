@@ -1034,7 +1034,7 @@ local function SendPlayerCheckWebhook()
         username   = "M B G",
         avatar_url = WEBHOOK_AVATAR,
         embeds     = { BuildEmbed(
-            EMOJI_CHECK .. " Check Player On Server " .. Players.LocalPlayer.Name,
+            EMOJI_CHECK .. " Check Player On Server OM BEDULLLL " ,
             description,
             TierColors.Join,
             {},
@@ -1402,7 +1402,7 @@ local function StartMonitoring()
     for _, p in ipairs(allPlayers) do table.insert(names, p.Name) end
 
     SendWebhook(EMOJI_STARTER .. " Monitor Started", "Server monitor sudah aktif", TierColors.Join, {
-        { name = SEP .. " Host",          value = "**" .. Players.LocalPlayer.Name .. "**",     inline = true  },
+        { name = SEP .. " Host Server",  value = "SERVER BANG ADULLLLLLLLLL",              inline = true },
         { name = SEP .. " Total Player",  value = "**" .. tostring(#allPlayers) .. "** orang",   inline = true  },
         { name = SEP .. " Daftar Player", value = "```\n" .. table.concat(names, ", ") .. "```", inline = false },
     })
