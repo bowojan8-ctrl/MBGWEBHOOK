@@ -1364,9 +1364,9 @@ local function HookChat()
             if msg.TextSource == nil then CheckAndSend(text) end
 
             -- Command manual buat trigger "Check Player On Server" kapan aja.
-            -- Ketik !MBG di chat game buat langsung kirim ke webhook.
+            -- Ketik !mbg di chat game buat langsung kirim ke webhook.
             local lowerText = Trim(string.lower(text))
-            if lowerText == "!MBG" then
+            if lowerText == "!mbg" then
                 SendPlayerCheckWebhook()
             end
         end)
@@ -1382,7 +1382,7 @@ local function HookChat()
                     CheckAndSend(d.Message)
                 end
                 local trimmedMsg = Trim(lowerMsg)
-                if trimmedMsg == "!MBG" then
+                if trimmedMsg == "!mbg" then
                     SendPlayerCheckWebhook()
                 end
             end)
