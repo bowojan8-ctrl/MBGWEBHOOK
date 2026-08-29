@@ -21,7 +21,7 @@ local WEBHOOK_CHECKPLAYER = ""
 local WEBHOOK_AVATAR      = ""
 local PROXY               = "https://square-haze-a007.remediashop.workers.dev"
 local SCRIPT_ACTIVE       = false
-local EVENT_NOTIF_ENABLED = true -- toggle ON/OFF khusus notifikasi Event Hunt
+local EVENT_NOTIF_ENABLED = false -- toggle ON/OFF khusus notifikasi Event Hunt
 
 local EVENT_COOLDOWN_SECONDS = 120
 local ROLE_NELAYAN_ID        = "1476331948115755210"
