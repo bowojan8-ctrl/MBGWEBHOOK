@@ -92,8 +92,10 @@ local MemberList = {
     { username = "Naxelll20",        display = "Naxelll20",            id = "248297103971975169" },
     { username = "nomxel20",         display = "nomxel20",             id = "248297103971975169" },
     { username = "Cabebandot",       display = "Hakari",               id = "444135915636391939" },
+    { username = "Refrain_13",       display = "Ren",                  id = "1465026039666184263" },
+    { username = "cizukeik999",      display = "cizukeik999",          id = "760811175503593474" },
+    { username = "sweetyavocad0",    display = "Merraki",              id = "760811175503593474" },
     { username = "USERROBLOX",       display = "NAMA",                 id = "1032602143363960833" },
-
 
 
 
@@ -124,7 +126,8 @@ local SecretFishList = {
     "Frostmoon Whale", "Crystal Goliath", "Eggy Enchant Stone", "Dark Megalodon",
     "Elemental Tempestray", "Glacial Serpent", "Caustic Maw", "Coral Reaper",
     "Sunken Hadalith", "Trench Warden", "Caeruleum Razerback", "Two-headed shark", "Ragnarex",
-    "Colossal Shipwreck Crab", "Astrelle", "Moonwake Ray", "Astralune", "Starglass Guardian", "Pelagon", "Crimson Dreadtusk", "Riftborn Arowana",
+    "Colossal Shipwreck Crab", "Astrelle", "Moonwake Ray", "Astralune", "Starglass Guardian",
+    "Pelagon", "Crimson Dreadtusk", "Riftborn Arowana", "Stormshell Brute", "Pyrocoil", "Wintertusk Mammofin",
 }
 
 local ForgottenList = {
@@ -267,7 +270,10 @@ local FishChanceData = {
     ["Starglass Guardian"]        = "1 in 3M",
     ["Pelagon"]                   = "1 in 4.5M",
     ["Riftborn Arowana"]          = "1 in 4.5M",
-    ["Crimson Dreadtusk"]         ="1 in 20M",
+    ["Crimson Dreadtusk"]         = "1 in 20M",
+    ["Stormshell Brute"]          = "1 in 4M",
+    ["Pyrocoil"]                  = "1 in 4M",
+    ["Wintertusk Mammofin"]       = "1 in 4M",
 }
 
 local NP = "https://raw.githubusercontent.com/revkatomy-max/new-pisit-image/main/"
@@ -353,12 +359,15 @@ local FishImageURL = {
     -- cek lagi nama file yang beneran ke-upload di repo new-pisit-image, kalau salah nanti
     -- gambarnya gak muncul kayak kasus Glacial Serpent kemarin.
     ["Astrelle"]                 = "https://raw.githubusercontent.com/revkatomy-max/new-pisit-image/main/Astrlele.png",
-["Astralune"] = "https://raw.githubusercontent.com/revkatomy-max/new-pisit-image/main/1000188338.png",
-["Moonwake Ray"] = "https://raw.githubusercontent.com/revkatomy-max/new-pisit-image/main/1000188340.png",
-["Pelagon"] = "https://raw.githubusercontent.com/revkatomy-max/new-pisit-image/main/1000192226%20(1).png",
-["Starglass Guardian"] = "https://raw.githubusercontent.com/revkatomy-max/new-pisit-image/main/1000192227%20(1).png",
-["Riftborn Arowana"] = "https://raw.githubusercontent.com/revkatomy-max/new-pisit-image/main/1000195428.png",
-["Crimson Dreadtusk"] = "https://raw.githubusercontent.com/revkatomy-max/new-pisit-image/main/1000195427.png",
+    ["Astralune"]                = "https://raw.githubusercontent.com/revkatomy-max/new-pisit-image/main/1000188338.png",
+    ["Moonwake Ray"]             = "https://raw.githubusercontent.com/revkatomy-max/new-pisit-image/main/1000188340.png",
+    ["Pelagon"]                  = "https://raw.githubusercontent.com/revkatomy-max/new-pisit-image/main/1000192226%20(1).png",
+    ["Starglass Guardian"]       = "https://raw.githubusercontent.com/revkatomy-max/new-pisit-image/main/1000192227%20(1).png",
+    ["Riftborn Arowana"]         = "https://raw.githubusercontent.com/revkatomy-max/new-pisit-image/main/1000195428.png",
+    ["Crimson Dreadtusk"]        = "https://raw.githubusercontent.com/revkatomy-max/new-pisit-image/main/1000195427.png",
+    ["Stormshell Brute"]         = "https://raw.githubusercontent.com/revkatomy-max/new-pisit-image/main/112.png",
+    ["Pyrocoil"]                 = "https://raw.githubusercontent.com/revkatomy-max/new-pisit-image/main/115.png",
+    ["Wintertusk Mammofin"]      = "https://raw.githubusercontent.com/revkatomy-max/new-pisit-image/main/113.png",
     -- TODO: tambahin URL gambar buat "Shiny Hammerhead Shark" di sini biar thumbnail
     -- Mythic Fish Detected muncul, contoh:
     -- ["Shiny Hammerhead Shark"] = NP .. "namafile.png",
