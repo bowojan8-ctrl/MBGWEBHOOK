@@ -131,8 +131,8 @@ local SecretFishList = {
 
 local ForgottenList = {
     "Sea Eater", "Thunderzilla", "Iridesca", "Frostbite Leviathan", "Fluorivane",
-    "Cerulean Dragon", "Crystalline Behemoth", "Trench Warden", "Ragnarex", "Astralune",
-    "Crimson Dreadtusk", "Elemental Hydra", "Overlord Hydra",
+    "Cerulean Dragon", "Crystalline Behemoth", "Trench Warden", "Ragnarex",
+    "Astralune", "Crimson Dreadtusk", "Elemental Hydra", "Overlord Hydra",
 }
 
 local MutasiList = {
