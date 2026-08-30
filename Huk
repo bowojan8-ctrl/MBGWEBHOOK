@@ -131,12 +131,14 @@ local SecretFishList = {
 
 local ForgottenList = {
     "Sea Eater", "Thunderzilla", "Iridesca", "Frostbite Leviathan", "Fluorivane",
-    "Cerulean Dragon", "Crystalline Behemoth", "Trench Warden", "Ragnarex", "Astralune", "Crimson Dreadtusk",
+    "Cerulean Dragon", "Crystalline Behemoth", "Trench Warden", "Ragnarex", "Astralune",
+    "Crimson Dreadtusk", "Elemental Hydra", "Overlord Hydra",
 }
 
 local MutasiList = {
     "Noob", "Fairy Dust", "Holographic", "Gemstone", "Fire", "Color Burn",
-    "BloodMoon", "Binary", "Lightning", "Disco", "Festive", "Radioactive", "Moon Fragment", "Abyssal", "Cosmic", "Equinox", "Glitch",
+    "BloodMoon", "Binary", "Lightning", "Disco", "Festive", "Radioactive",
+    "Moon Fragment", "Abyssal", "Cosmic", "Equinox", "Glitch",
     -- FIX 6: Aurora & Midnight itu mutasi beneran (sama kayak Abyssal), makanya harus tetap ada di sini.
     -- Masalahnya BUKAN di list ini, tapi di cara deteksi prefix-nya -- lihat MutasiFalsePositiveSpecies di bawah.
     "Aurora", "Midnight",
@@ -273,6 +275,8 @@ local FishChanceData = {
     ["Stormshell Brute"]          = "1 in 4M",
     ["Pyrocoil"]                  = "1 in 4M",
     ["Wintertusk Mammofin"]       = "1 in 4M",
+    ["Elemental Hydra"]           = "1 in 40M",
+    ["Overlord Hydra"]            = "1 in 45M",
 }
 
 local NP = "https://raw.githubusercontent.com/revkatomy-max/new-pisit-image/main/"
@@ -367,6 +371,8 @@ local FishImageURL = {
     ["Stormshell Brute"]         = "https://raw.githubusercontent.com/revkatomy-max/new-pisit-image/main/112.png",
     ["Pyrocoil"]                 = "https://raw.githubusercontent.com/revkatomy-max/new-pisit-image/main/115.png",
     ["Wintertusk Mammofin"]      = "https://raw.githubusercontent.com/revkatomy-max/new-pisit-image/main/113.png",
+    ["Elemental Hydra"]          = "https://raw.githubusercontent.com/revkatomy-max/new-pisit-image/main/51076.png",
+    ["Overlord Hydra"]           = "https://raw.githubusercontent.com/bowojan8-ctrl/FISH-IT-FOTO-ANJAY-MABAR/main/IMG_2315.jpeg",
     -- TODO: tambahin URL gambar buat "Shiny Hammerhead Shark" di sini biar thumbnail
     -- Mythic Fish Detected muncul, contoh:
     -- ["Shiny Hammerhead Shark"] = NP .. "namafile.png",
