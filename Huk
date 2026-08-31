@@ -70,6 +70,7 @@ local SEP = EMOJI_SEPARATOR
 
 local MemberList = {
     { username = "CREW_DieHard",     display = "BALJITOT",             id = "219002813806673930" },
+    { username = "strawvxntae",      display = "berry",                id = "1472281518704693349" },
     { username = "aangdul",          display = "Jiikakamulasatu",      id = "248297103971975169" },
     { username = "aangdulre",        display = "VermiOnie",            id = "248297103971975169" },
     { username = "Yokatsusu",        display = "Yoka",                 id = "1393227652806086676" },
@@ -86,7 +87,6 @@ local MemberList = {
     { username = "nonna_naksecret2", display = "ALTNONA3",             id = "1377239165699231805" },
     { username = "yowpiaw",          display = "piyapiyopoyo",         id = "1377239165699231805" },
     { username = "flaycassey",       display = "Chizuenao",            id = "1377239165699231805" },
-    { username = "strawvxntae",      display = "berry",                id = "1472281518704693349" },
     { username = "Naxel200",         display = "Naxel20",              id = "248297103971975169" },
     { username = "Naxelll20",        display = "Naxelll20",            id = "248297103971975169" },
     { username = "nomxel20",         display = "nomxel20",             id = "248297103971975169" },
