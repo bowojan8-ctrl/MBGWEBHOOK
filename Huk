@@ -404,6 +404,30 @@ end
 -- ============================================================
 
 local EventHuntData = {
+    {
+        textTriggers = { "storm elemental event" },
+        title        = EMOJI_STORM .. " Storm Event Dimulai!",
+        description  = "Pindah lekkkkkkk " .. EMOJI_STORM,
+        color        = 1146986,
+        emoji        = "⚡",
+        thumbUrl     = FishImageURL["Stormshell Brute"],
+    },
+    {
+        textTriggers = { "blizzard elemental event" },
+        title        = EMOJI_BLIZZARD .. " Blizzard Event Dimulai!",
+        description  = "Pindah lekkkkkkk " .. EMOJI_BLIZZARD,
+        color        = 6530531,
+        emoji        = "❄️",
+        thumbUrl     = FishImageURL["Wintertusk Mammofin"],
+    },
+    {
+        textTriggers = { "volcano elemental event" },
+        title        = EMOJI_VOLCANO .. " Volcano Event Dimulai!",
+        description  = "Pindah lekkkkkkk " .. EMOJI_VOLCANO,
+        color        = 16075047,
+        emoji        = "🌋",
+        thumbUrl     = FishImageURL["Pyrocoil"],
+    },
     --[[ dinonaktifkan -- Treasure Hunt
     {
         textTriggers = { "treasure hunt" },
@@ -421,22 +445,6 @@ local EventHuntData = {
         color        = 1146986,
         emoji        = "💎",
         thumbUrl     = FishImageURL["Crystal"],
-    },
-    {
-        textTriggers = { "blizzard elemental event" },
-        title        = EMOJI_BLIZZARD .. " Blizzard Event Dimulai!",
-        description  = "Pindah lekkkkkkk " .. EMOJI_BLIZZARD,
-        color        = 6530531,
-        emoji        = "❄️",
-        thumbUrl     = FishImageURL["Wintertusk Mammofin"],
-    },
-    {
-        textTriggers = { "volcano elemental event" },
-        title        = EMOJI_VOLCANO .. " Volcano Event Dimulai!",
-        description  = "Pindah lekkkkkkk " .. EMOJI_VOLCANO,
-        color        = 16075047,
-        emoji        = "🌋",
-        thumbUrl     = FishImageURL["Pyrocoil"],
     },
     --[[ dinonaktifkan -- Dark Megalodon Hunt
     {
@@ -465,14 +473,6 @@ local EventHuntData = {
         color        = 16776960,
         emoji        = "⚡",
         thumbUrl     = FishImageURL["Thunderzilla"],
-    },
-    {
-        textTriggers = { "storm elemental event" },
-        title        = EMOJI_STORM .. " Storm Event Dimulai!",
-        description  = "Pindah lekkkkkkk " .. EMOJI_STORM,
-        color        = 1146986,
-        emoji        = "⚡",
-        thumbUrl     = FishImageURL["Stormshell Brute"],
     },
     --[[ dinonaktifkan -- Aurora Borealis
     {
