@@ -23,7 +23,7 @@ local PROXY               = "https://square-haze-a007.remediashop.workers.dev"
 local SCRIPT_ACTIVE       = false
 local EVENT_NOTIF_ENABLED = false -- toggle ON/OFF khusus notifikasi Event Hunt
 
-local EVENT_COOLDOWN_SECONDS = 120
+local EVENT_COOLDOWN_SECONDS = 3600
 local ROLE_NELAYAN_ID        = "1476331948115755210"
 
 local BRAND_NAME        = "MAIN BARENG GENGZZZ"
@@ -61,6 +61,9 @@ local EMOJI_NOTBACK    = "<a:jam:1517740557445894194>"
 local EMOJI_CHECK      = "🔍"
 local EMOJI_LOCATION   = "📍"
 local EMOJI_AFK        = "💤"
+local EMOJI_BLIZZARD   = "❄️"
+local EMOJI_VOLCANO    = "🌋"
+local EMOJI_STORM      = "⚡"
 local SEP = EMOJI_SEPARATOR
 
 
@@ -401,6 +404,7 @@ end
 -- ============================================================
 
 local EventHuntData = {
+    --[[ dinonaktifkan -- Treasure Hunt
     {
         textTriggers = { "treasure hunt" },
         title        = EMOJI_TREASURE .. " Treasure Hunt Dimulai!",
@@ -408,6 +412,31 @@ local EventHuntData = {
         color        = 16766720,
         emoji        = "💰",
         thumbUrl     = FishImageURL["treasure hunt"],
+    },
+    --[[ dinonaktifkan -- Crystals
+    {
+        textTriggers = { "crystals have spawned", "crystals have", "crystal" },
+        title        = EMOJI_CRYSTAL .. " Crystal Event Dimulai!",
+        description  = "Crystal muncul gas nambang " .. EMOJI_CRYSTAL,
+        color        = 1146986,
+        emoji        = "💎",
+        thumbUrl     = FishImageURL["Crystal"],
+    },
+    {
+        textTriggers = { "blizzard elemental event" },
+        title        = EMOJI_BLIZZARD .. " Blizzard Event Dimulai!",
+        description  = "Pindah lekkkkkkk " .. EMOJI_BLIZZARD,
+        color        = 6530531,
+        emoji        = "❄️",
+        thumbUrl     = FishImageURL["Wintertusk Mammofin"],
+    },
+    {
+        textTriggers = { "volcano elemental event" },
+        title        = EMOJI_VOLCANO .. " Volcano Event Dimulai!",
+        description  = "Pindah lekkkkkkk " .. EMOJI_VOLCANO,
+        color        = 16075047,
+        emoji        = "🌋",
+        thumbUrl     = FishImageURL["Pyrocoil"],
     },
     --[[ dinonaktifkan -- Dark Megalodon Hunt
     {
@@ -438,12 +467,12 @@ local EventHuntData = {
         thumbUrl     = FishImageURL["Thunderzilla"],
     },
     {
-        textTriggers = { "crystals have spawned", "crystals have", "crystal" },
-        title        = EMOJI_CRYSTAL .. " Crystal Event Dimulai!",
-        description  = "Crystal muncul gas nambang " .. EMOJI_CRYSTAL,
+        textTriggers = { "storm elemental event" },
+        title        = EMOJI_STORM .. " Storm Event Dimulai!",
+        description  = "Pindah lekkkkkkk " .. EMOJI_STORM,
         color        = 1146986,
-        emoji        = "💎",
-        thumbUrl     = FishImageURL["Crystal"],
+        emoji        = "⚡",
+        thumbUrl     = FishImageURL["Stormshell Brute"],
     },
     --[[ dinonaktifkan -- Aurora Borealis
     {
