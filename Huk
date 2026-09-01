@@ -428,7 +428,6 @@ local EventHuntData = {
         emoji        = "🌋",
         thumbUrl     = FishImageURL["Pyrocoil"],
     },
-    --[[ dinonaktifkan -- Treasure Hunt
     {
         textTriggers = { "treasure hunt" },
         title        = EMOJI_TREASURE .. " Treasure Hunt Dimulai!",
@@ -437,7 +436,6 @@ local EventHuntData = {
         emoji        = "💰",
         thumbUrl     = FishImageURL["treasure hunt"],
     },
-    --[[ dinonaktifkan -- Crystals
     {
         textTriggers = { "crystals have spawned", "crystals have", "crystal" },
         title        = EMOJI_CRYSTAL .. " Crystal Event Dimulai!",
