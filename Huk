@@ -129,7 +129,8 @@ local SecretFishList = {
     "Elemental Tempestray", "Glacial Serpent", "Caustic Maw", "Coral Reaper",
     "Sunken Hadalith", "Trench Warden", "Caeruleum Razerback", "Two-headed shark", "Ragnarex",
     "Colossal Shipwreck Crab", "Astrelle", "Moonwake Ray", "Astralune", "Starglass Guardian",
-    "Pelagon", "Crimson Dreadtusk", "Riftborn Arowana", "Stormshell Brute", "Pyrocoil", "Wintertusk Mammofin",
+    "Pelagon", "Crimson Dreadtusk", "Riftborn Arowana", "Stormshell Brute", "Pyrocoil",
+    "Wintertusk Mammofin", "Ashen Kingfish", "Tribunal Withering Core",
 }
 
 local ForgottenList = {
@@ -280,6 +281,8 @@ local FishChanceData = {
     ["Wintertusk Mammofin"]       = "1 in 4M",
     ["Elemental Hydra"]           = "1 in 40M",
     ["Overlord Hydra"]            = "1 in 45M",
+    ["Ashen Kingfish"]            = "1 in 3.50M",
+    ["Tribunal Withering Core"]   = "1 in 5.M",
 }
 
 local NP = "https://raw.githubusercontent.com/revkatomy-max/new-pisit-image/main/"
@@ -376,6 +379,8 @@ local FishImageURL = {
     ["Wintertusk Mammofin"]      = "https://raw.githubusercontent.com/revkatomy-max/new-pisit-image/main/113.png",
     ["Elemental Hydra"]          = "https://raw.githubusercontent.com/revkatomy-max/new-pisit-image/main/51076.png",
     ["Overlord Hydra"]           = "https://raw.githubusercontent.com/bowojan8-ctrl/FISH-IT-FOTO-ANJAY-MABAR/main/IMG_2315.jpeg",
+    ["Ashen Kingfish"]           = "https://raw.githubusercontent.com/bowojan8-ctrl/FISH-IT-FOTO-ANJAY-MABAR/main/Ashen%20Kingfish.PNG",
+    ["Tribunal Withering Core"]  = "https://raw.githubusercontent.com/bowojan8-ctrl/FISH-IT-FOTO-ANJAY-MABAR/main/Tribunal%20Withering%20Core.PNG",
     -- TODO: tambahin URL gambar buat "Shiny Hammerhead Shark" di sini biar thumbnail
     -- Mythic Fish Detected muncul, contoh:
     -- ["Shiny Hammerhead Shark"] = NP .. "namafile.png",
