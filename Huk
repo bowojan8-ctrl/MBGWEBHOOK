@@ -145,7 +145,7 @@ local MutasiList = {
     "Moon Fragment", "Abyssal", "Cosmic", "Equinox", "Glitch",
     -- FIX 6: Aurora & Midnight itu mutasi beneran (sama kayak Abyssal), makanya harus tetap ada di sini.
     -- Masalahnya BUKAN di list ini, tapi di cara deteksi prefix-nya -- lihat MutasiFalsePositiveSpecies di bawah.
-    "Aurora", "Midnight", "Elemental",
+    "Aurora", "Midnight",
     -- TODO: kalo mau nambahin "Albino" tinggal masukin string-nya di sini, contoh: "Albino",
 }
 
@@ -162,7 +162,6 @@ local MutasiFalsePositiveSpecies = {
     "aurora starfish",
     "aurora narwhal",
     "aurora manatee",
-    "ELEMENTAL HYDRA",
     "aurora buterfly fish",
     "midnight star squid",
 }
@@ -283,7 +282,7 @@ local FishChanceData = {
     ["ELEMENTAL HYDRA"]           = "1 in 40M",
     ["OVERLORD HYDRA"]            = "1 in 45M",
     ["Ashen Kingfish"]            = "1 in 3.50M",
-    ["Tribunal Withering Core"]   = "1 in 5.M",
+    ["Tribunal Withering Core"]   = "1 in 5M",
 }
 
 local NP = "https://raw.githubusercontent.com/revkatomy-max/new-pisit-image/main/"
