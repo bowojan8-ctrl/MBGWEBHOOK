@@ -130,13 +130,13 @@ local SecretFishList = {
     "Sunken Hadalith", "Trench Warden", "Caeruleum Razerback", "Two-headed shark", "Ragnarex",
     "Colossal Shipwreck Crab", "Astrelle", "Moonwake Ray", "Astralune", "Starglass Guardian",
     "Pelagon", "Crimson Dreadtusk", "Riftborn Arowana", "Stormshell Brute", "Pyrocoil",
-    "Wintertusk Mammofin", "Ashen Kingfish",
+    "Wintertusk Mammofin", "Ashen Kingfish", "Tribunal Withering Core", "ELEMENTAL HYDRA", "OVERLORD HYDRA",
 }
 
 local ForgottenList = {
     "ELEMENTAL HYDRA", "OVERLORD HYDRA", "Iridesca", "Frostbite Leviathan", "Fluorivane",
     "Cerulean Dragon", "Crystalline Behemoth", "Trench Warden", "Ragnarex",
-    "Astralune", "Crimson Dreadtusk", "Sea Eater", "Thunderzilla", "Tribunal Withering Core",
+    "Astralune", "Crimson Dreadtusk", "Sea Eater", "Thunderzilla",
 }
 
 local MutasiList = {
@@ -145,7 +145,7 @@ local MutasiList = {
     "Moon Fragment", "Abyssal", "Cosmic", "Equinox", "Glitch",
     -- FIX 6: Aurora & Midnight itu mutasi beneran (sama kayak Abyssal), makanya harus tetap ada di sini.
     -- Masalahnya BUKAN di list ini, tapi di cara deteksi prefix-nya -- lihat MutasiFalsePositiveSpecies di bawah.
-    "Aurora", "Midnight",
+    "Aurora", "Midnight", "Elemental",
     -- TODO: kalo mau nambahin "Albino" tinggal masukin string-nya di sini, contoh: "Albino",
 }
 
