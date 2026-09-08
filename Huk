@@ -2,69 +2,69 @@
 --  MBG Server Monitor  |  TIKTOK: @mainbarenggengz
 -- ============================================================
 
-local HttpService       = game:GetService("HttpService")
-local Players           = game:GetService("Players")
-local TextChatService    = game:GetService("TextChatService")
-local ReplicatedStorage  = game:GetService("ReplicatedStorage")
-local CoreGui            = game:GetService("CoreGui")
-local TweenService       = game:GetService("TweenService")
-local Workspace          = game:GetService("Workspace")
+local HttpService                = game:GetService("HttpService")
+local Players                    = game:GetService("Players")
+local TextChatService            = game:GetService("TextChatService")
+local ReplicatedStorage          = game:GetService("ReplicatedStorage")
+local CoreGui                    = game:GetService("CoreGui")
+local TweenService               = game:GetService("TweenService")
+local Workspace                  = game:GetService("Workspace")
 
-local WEBHOOK_URL         = ""
-local WEBHOOK_STATS       = "" -- NOTE: dipertahankan sebagai fallback URL buat "Check Player On Server"
-                                -- kalau WEBHOOK_CHECKPLAYER kosong. Embed rekap otomatis "Server Stats"
-                                -- yang dulu numpang di sini SUDAH DIHAPUS sesuai request.
-local WEBHOOK_FISH        = ""
-local WEBHOOK_EVENT       = ""
-local WEBHOOK_MUTASI      = ""
-local WEBHOOK_CHECKPLAYER = ""
-local WEBHOOK_AVATAR      = ""
-local PROXY               = "https://square-haze-a007.remediashop.workers.dev"
-local SCRIPT_ACTIVE       = false
-local EVENT_NOTIF_ENABLED = true -- toggle ON/OFF khusus notifikasi Event Hunt
+local WEBHOOK_URL                = ""
+local WEBHOOK_STATS              = "" -- NOTE: dipertahankan sebagai fallback URL buat "Check Player On Server"
+                                      -- kalau WEBHOOK_CHECKPLAYER kosong. Embed rekap otomatis "Server Stats"
+                                      -- yang dulu numpang di sini SUDAH DIHAPUS sesuai request.
+local WEBHOOK_FISH               = ""
+local WEBHOOK_EVENT              = ""
+local WEBHOOK_MUTASI             = ""
+local WEBHOOK_CHECKPLAYER        = ""
+local WEBHOOK_AVATAR             = ""
+local PROXY                      = "https://square-haze-a007.remediashop.workers.dev"
+local SCRIPT_ACTIVE              = false
+local EVENT_NOTIF_ENABLED        = true -- toggle ON/OFF khusus notifikasi Event Hunt
 
 local EVENT_COOLDOWN_SECONDS = 3600
-local ROLE_NELAYAN_ID        = "1476331948115755210"
+local ROLE_NELAYAN_ID            = "1476331948115755210"
 
-local BRAND_NAME        = "MAIN BARENG GENGZZZ"
-local BRAND_ICON        = "https://cdn.discordapp.com/attachments/1501775192056266752/1528081774494748672/IMG_9994.jpg?ex=6a8141cd&is=6a7ff04d&hm=da2e4b3941ed192ed1617d805b303c45025c0eb57d7010363aee28b1271145d8&"
-local BRAND_FOOTER_TEXT = "M B G • Server Monitor"
+local BRAND_NAME                 = "MAIN BARENG GENGZZZ"
+local BRAND_ICON                 = "https://cdn.discordapp.com/attachments/1501775192056266752/1528081774494748672/IMG_9994.jpg?ex=6a8141cd&is=6a7ff04d&hm=da2e4b3941ed192ed1617d805b303c45025c0eb57d7010363aee28b1271145d8&"
+local BRAND_FOOTER_TEXT          = "M B G • Server Monitor"
 
 local TierColors = {
-    Secret    = 1752220,
-    Forgotten = 15263976,
-    Ruby      = 16753920,
-    Legendary = 3407871,
-    Mutasi    = 16776960,
-    Join      = 65280,
-    Leave     = 16729344,
-    NotBack   = 16711680,
-    AFK       = 8421504,
-    Mitos     = 16711680, -- merah polos buat tier Mitos (Shiny Hammerhead Shark, dll)
+    Secret                       = 1752220,
+    Forgotten                    = 15263976,
+    Ruby                         = 16753920,
+    Legendary                    = 3407871,
+    Mutasi                       = 16776960,
+    Join                         = 65280,
+    Leave                        = 16729344,
+    NotBack                      = 16711680,
+    AFK                          = 8421504,
+    Mitos                        = 16711680, -- merah polos buat tier Mitos (Shiny Hammerhead Shark, dll)
 }
 
-local EMOJI_NOTIF     = "<a:notif:1517730648545034390>"
-local EMOJI_SEPARATOR = "<a:arrow:1517730055323652106>"
-local EMOJI_STARTER   = "<a:mancing:1517730589091041433>"
-local EMOJI_FORGOTTEN = "<a:wiu:1517740584763265094>"
-local EMOJI_MUTASI    = "<a:mutasi:1517730565225447616>"
-local EMOJI_RUBY       = "<a:ruby:1517740619794092153>"
-local EMOJI_LEGENDARY  = "<a:apiijo:1517778951223902239>"
-local EMOJI_TREASURE   = "<a:treasure:1517740647119847516>"
-local EMOJI_MEGALODON  = "<a:megablink:1517740677814030437>" -- masih dipakai di EventHuntData yang di-comment (Dark/Megalodon Hunt), jaga-jaga buat reaktivasi
-local EMOJI_THUNDER    = "<a:thunder:1517730620250390589>"
-local EMOJI_CRYSTAL    = "<a:ruby:1517740619794092153>" -- NOTE: sama persis dgn EMOJI_RUBY, cek lagi apakah emoji crystal-nya beneran ini
-local EMOJI_EVENTTAG   = "📢"
-local EMOJI_JOIN       = "<a:join:1517738095917924372>"
-local EMOJI_LEAVE      = "<a:leave:1517738147914711190>"
-local EMOJI_NOTBACK    = "<a:jam:1517740557445894194>"
-local EMOJI_CHECK      = "🔍"
-local EMOJI_LOCATION   = "📍"
-local EMOJI_AFK        = "💤"
-local EMOJI_BLIZZARD   = "❄️"
-local EMOJI_VOLCANO    = "🌋"
-local EMOJI_STORM      = "⚡"
-local SEP = EMOJI_SEPARATOR
+local EMOJI_NOTIF                = "<a:notif:1517730648545034390>"
+local EMOJI_SEPARATOR            = "<a:arrow:1517730055323652106>"
+local EMOJI_STARTER              = "<a:mancing:1517730589091041433>"
+local EMOJI_FORGOTTEN            = "<a:wiu:1517740584763265094>"
+local EMOJI_MUTASI               = "<a:mutasi:1517730565225447616>"
+local EMOJI_RUBY                 = "<a:ruby:1517740619794092153>"
+local EMOJI_LEGENDARY            = "<a:apiijo:1517778951223902239>"
+local EMOJI_TREASURE             = "<a:treasure:1517740647119847516>"
+local EMOJI_MEGALODON            = "<a:megablink:1517740677814030437>" -- masih dipakai di EventHuntData yang di-comment (Dark/Megalodon Hunt), jaga-jaga buat reaktivasi
+local EMOJI_THUNDER              = "<a:thunder:1517730620250390589>"
+local EMOJI_CRYSTAL              = "<a:ruby:1517740619794092153>" -- NOTE: sama persis dgn EMOJI_RUBY, cek lagi apakah emoji crystal-nya beneran ini
+local EMOJI_EVENTTAG             = "📢"
+local EMOJI_JOIN                 = "<a:join:1517738095917924372>"
+local EMOJI_LEAVE                = "<a:leave:1517738147914711190>"
+local EMOJI_NOTBACK              = "<a:jam:1517740557445894194>"
+local EMOJI_CHECK                = "🔍"
+local EMOJI_LOCATION             = "📍"
+local EMOJI_AFK                  = "💤"
+local EMOJI_BLIZZARD             = "❄️"
+local EMOJI_VOLCANO              = "🌋"
+local EMOJI_STORM                = "⚡"
+local SEP                        = EMOJI_SEPARATOR
 
 
 -- ============================================================
