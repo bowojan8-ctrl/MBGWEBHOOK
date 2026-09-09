@@ -23,7 +23,7 @@ local PROXY                      = "https://square-haze-a007.remediashop.workers
 local SCRIPT_ACTIVE              = false
 local EVENT_NOTIF_ENABLED        = true -- toggle ON/OFF khusus notifikasi Event Hunt
 
-local EVENT_COOLDOWN_SECONDS = 120
+local EVENT_COOLDOWN_SECONDS = 10800
 local ROLE_NELAYAN_ID            = "1476331948115755210"
 
 local BRAND_NAME                 = "MAIN BARENG GENGZZZ"
