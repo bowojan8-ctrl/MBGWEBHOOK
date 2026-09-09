@@ -411,22 +411,6 @@ end
 
 local EventHuntData = {
     {
-        textTriggers = { "treasure hunt" },
-        title        = EMOJI_TREASURE .. " Treasure Hunt Dimulai!",
-        description  = "katakan Peta 🗺️",
-        color        = 16766720,
-        emoji        = "💰",
-        thumbUrl     = FishImageURL["treasure hunt"],
-    },
-    {
-        textTriggers = { "crystals have spawned", "crystals have", "crystal" },
-        title        = EMOJI_CRYSTAL .. " Crystal Event Dimulai!",
-        description  = "Crystal muncul gas nambang " .. EMOJI_CRYSTAL,
-        color        = 1146986,
-        emoji        = "💎",
-        thumbUrl     = FishImageURL["Crystal"],
-    },
-    {
         textTriggers = { "blizzard elemental event" },
         title        = EMOJI_BLIZZARD .. " Blizzard Event Dimulai!",
         description  = "Pindah lekkkkkkk " .. EMOJI_BLIZZARD,
@@ -474,15 +458,6 @@ local EventHuntData = {
         emoji        = "🌋",
         thumbUrl     = FishImageURL["Pyrocoil"],
     },
-    {
-        textTriggers = { "aurora borealis", "aurora event" },
-        title        = "💫 Aurora Borealis!",
-        description  = "cantiknyooo",
-        color        = 9055202,
-        emoji        = "💫",
-        thumbUrl     = FishImageURL["Aurora"],
-    },
-    ]]
 }
 
 local EventCooldown = {}
