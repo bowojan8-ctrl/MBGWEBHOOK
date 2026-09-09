@@ -143,7 +143,7 @@ local ForgottenList = {
 local MutasiList = {
     "Noob", "Fairy Dust", "Holographic", "Gemstone", "Fire", "Color Burn",
     "BloodMoon", "Binary", "Lightning", "Disco", "Festive", "Radioactive",
-    "Moon Fragment", "Abyssal", "Cosmic", "Equinox", "Glitch",
+    "Moon Fragment", "Abyssal", "Cosmic", "Equinox", "Glitch", "Solar",
     -- FIX 6: Aurora & Midnight itu mutasi beneran (sama kayak Abyssal), makanya harus tetap ada di sini.
     -- Masalahnya BUKAN di list ini, tapi di cara deteksi prefix-nya -- lihat MutasiFalsePositiveSpecies di bawah.
     "Aurora", "Midnight", "Elemental",
