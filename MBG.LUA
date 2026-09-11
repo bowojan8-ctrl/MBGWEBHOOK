@@ -99,7 +99,7 @@ local MemberList = {
     { username = "sweetyavocad0",    display = "Merraki",              id = "760811175503593474" },
     { username = "zzezestt",         display = "vessel",               id = "1111713588520956005" },
     { username = "nonnaimup",        display = "NONA",                 id = "1377239165699231805" },
-    { username = "awrindu",          display = "Awrinndu",             id = "219002813806673930", "219002813806673930" },
+    { username = "awrindu",          display = "Awrinndu",             id = "219002813806673930", "1335602103992975440" },
     { username = "Mie_ayam2802",     display = "Xyrooo",               id = "219002813806673930" "1438980960107495534" },
     { username = "USERROBLOX",       display = "NAMA",                 id = "1032602143363960833" },
 
