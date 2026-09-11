@@ -85,9 +85,9 @@ local MemberList = {
     { username = "Mahafii_11",       display = "Yunno",                id = "1032602143363960833" },
     { username = "notericarl",       display = "notericarl",           id = "760811175503593474" },
     { username = "CheeseBrgr7",      display = "bas",                  id = "1437068504456237116" },
-    { username = "ItsMe_Nonaaa",     display = "vionique",             id = "1377239165699231805" },
-    { username = "nonna_naksecret1", display = "ALTNONA2",             id = "1377239165699231805" },
-    { username = "nonna_naksecret2", display = "ALTNONA3",             id = "1377239165699231805" },
+    { username = "ItsMe_Nonaaa",     display = "vionique",             id = {"1377239165699231805", "1292331079734132740"} },
+    { username = "nonna_naksecret1", display = "ALTNONA2",             id = {"1377239165699231805", "1292331079734132740"} },
+    { username = "nonna_naksecret2", display = "ALTNONA3",             id = {"1377239165699231805", "1292331079734132740"} },
     { username = "yowpiaw",          display = "piyapiyopoyo",         id = "1377239165699231805" },
     { username = "flaycassey",       display = "Chizuenao",            id = "1377239165699231805" },
     { username = "Naxel200",         display = "Naxel20",              id = "248297103971975169" },
@@ -98,9 +98,9 @@ local MemberList = {
     { username = "cizukeik999",      display = "cizukeik999",          id = "760811175503593474" },
     { username = "sweetyavocad0",    display = "Merraki",              id = "760811175503593474" },
     { username = "zzezestt",         display = "vessel",               id = "1111713588520956005" },
-    { username = "nonnaimup",        display = "NONA",                 id = "1377239165699231805" },
-    { username = "awrindu",          display = "Awrinndu",             id = "219002813806673930", "1438980960107495534" },
-    { username = "Mie_ayam2802",     display = "Xyrooo",               id = "219002813806673930" "1438980960107495534" },
+    { username = "nonnaimup",        display = "NONA",                 id = {"1377239165699231805", "1292331079734132740"} },
+    { username = "awrindu",          display = "Awrinndu",             id = {"219002813806673930", "1438450607349567488"} },
+    { username = "Mie_ayam2802",     display = "Xyrooo",               id = {"219002813806673930", "893896145544282164"} },
     { username = "USERROBLOX",       display = "NAMA",                 id = "1032602143363960833" },
 
 
@@ -610,13 +610,34 @@ end
 
 local function GetMention(robloxName)
     if not robloxName then return "" end
+
     local lower = string.lower(robloxName)
-    if MentionCache[lower] then return "<@" .. MentionCache[lower] .. ">" end
+
+    local function FormatMention(ids)
+        if type(ids) == "table" then
+            local mentions = {}
+
+            for _, discordId in ipairs(ids) do
+                table.insert(mentions, "<@" .. discordId .. ">")
+            end
+
+            return table.concat(mentions, " ")
+        end
+
+        return "<@" .. tostring(ids) .. ">"
+    end
+
+    if MentionCache[lower] then
+        return FormatMention(MentionCache[lower])
+    end
+
     for _, member in ipairs(MemberList) do
-        if string.lower(member.username) == lower or string.lower(member.display) == lower then
-            return "<@" .. member.id .. ">"
+        if string.lower(member.username) == lower
+        or string.lower(member.display) == lower then
+            return FormatMention(member.id)
         end
     end
+
     return ""
 end
 
