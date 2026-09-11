@@ -99,7 +99,7 @@ local MemberList = {
     { username = "sweetyavocad0",    display = "Merraki",              id = "760811175503593474" },
     { username = "zzezestt",         display = "vessel",               id = "1111713588520956005" },
     { username = "USERROBLOX",       display = "NAMA",                 id = "1032602143363960833" },
-
+    { username = "nonnaimup",        display = "NONA",                 id = "1377239165699231805" },
 
 
 }
@@ -243,7 +243,7 @@ local FishChanceData = {
     ["Blocky Lochness Monster"]   = "1 in 3M",
     ["Frostbite Leviathan"]       = "1 in 12M",
     ["Aurelion"]                  = "1 in 3M",
-    ["Runic Enchant Stone"]       = "1 in 1.5M",
+    ["Runic Enchant Stone"]       = "1 in 700K",
     ["Frogalloon"]                = "1 in 1.5M",
     ["Fluorivane"]                = "1 in 15M",
     ["Coral Whale"]               = "1 in 2M",
