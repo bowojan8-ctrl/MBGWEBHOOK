@@ -101,6 +101,9 @@ local MemberList = {
     { username = "nonnaimup",        display = "NONA",                 id = {"1377239165699231805", "1292331079734132740"} },
     { username = "awrindu",          display = "Awrinndu",             id = {"1438450607349567488", "219002813806673930"} },
     { username = "Mie_ayam2802",     display = "Xyrooo",               id = {"893896145544282164", "219002813806673930"} },
+    { username = "Cherryy0_0i",      display = "viii",                 id = "1454391668793938013" },
+    { username = "USERROBLOX",       display = "NAMA",                 id = "1032602143363960833" },
+    { username = "USERROBLOX",       display = "NAMA",                 id = "1032602143363960833" },
     { username = "USERROBLOX",       display = "NAMA",                 id = "1032602143363960833" },
 
 
