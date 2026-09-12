@@ -73,7 +73,7 @@ local SEP                        = EMOJI_SEPARATOR
 
 local MemberList = {
     { username = "bowojan821",       display = "BALJITOT",             id = "219002813806673930" },
-    { username = "strawvxntae",      display = "berry",                id = "1472281518704693349" },
+    { username = "strawvxntae",      display = "berry",                id = {"1472281518704693349", "219002813806673930"} },
     { username = "aangdul",          display = "Jiikakamulasatu",      id = "248297103971975169" },
     { username = "aangdulre",        display = "VermiOnie",            id = "248297103971975169" },
     { username = "Yokatsusu",        display = "Yoka",                 id = "1393227652806086676" },
@@ -99,8 +99,8 @@ local MemberList = {
     { username = "sweetyavocad0",    display = "Merraki",              id = "760811175503593474" },
     { username = "zzezestt",         display = "vessel",               id = "1111713588520956005" },
     { username = "nonnaimup",        display = "NONA",                 id = {"1377239165699231805", "1292331079734132740"} },
-    { username = "awrindu",          display = "Awrinndu",             id = {"219002813806673930", "1438450607349567488"} },
-    { username = "Mie_ayam2802",     display = "Xyrooo",               id = {"219002813806673930", "893896145544282164"} },
+    { username = "awrindu",          display = "Awrinndu",             id = {"1438450607349567488", "219002813806673930"} },
+    { username = "Mie_ayam2802",     display = "Xyrooo",               id = {"893896145544282164", "219002813806673930"} },
     { username = "USERROBLOX",       display = "NAMA",                 id = "1032602143363960833" },
 
 
