@@ -292,11 +292,15 @@ local FishChanceData = {
     ["OVERLORD HYDRA"]            = "1 in 45M",
     ["Ashen Kingfish"]            = "1 in 3.50M",
     ["Tribunal Withering Core"]   = "1 in 5M",
+    ["Everbloom"]                 = "1 in 20M",
+    ["Mr Money Bags"]             = "1 in 4M",
 }
 
 local NP = "https://raw.githubusercontent.com/revkatomy-max/new-pisit-image/main/"
 
 local FishImageURL = {
+    ["Everbloom"]                = "-",
+    ["Mr Money Bags"]            = "1 in 4M",
     ["Frostborn Shark"]          = NP .. "9.png",
     ["Crystal Goliath"]          = NP .. "11.png",
     ["Crystalline Behemoth"]     = NP .. "10.png",
