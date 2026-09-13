@@ -300,7 +300,7 @@ local NP = "https://raw.githubusercontent.com/revkatomy-max/new-pisit-image/main
 
 local FishImageURL = {
     ["Everbloom"]                = "-",
-    ["Mr Money Bags"]            = "1 in 4M",
+    ["Mr Money Bags"]            = "https://raw.githubusercontent.com/bowojan8-ctrl/FISH-IT-FOTO-ANJAY-MABAR/main/Money%20Bags.png",
     ["Frostborn Shark"]          = NP .. "9.png",
     ["Crystal Goliath"]          = NP .. "11.png",
     ["Crystalline Behemoth"]     = NP .. "10.png",
