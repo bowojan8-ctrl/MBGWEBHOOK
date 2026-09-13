@@ -299,7 +299,7 @@ local FishChanceData = {
 local NP = "https://raw.githubusercontent.com/revkatomy-max/new-pisit-image/main/"
 
 local FishImageURL = {
-    ["Everbloom"]                = "-",
+    ["Everbloom"]                = "https://raw.githubusercontent.com/bowojan8-ctrl/FISH-IT-FOTO-ANJAY-MABAR/main/Everbloom.WEBP",
     ["Mr Money Bags"]            = "https://raw.githubusercontent.com/bowojan8-ctrl/FISH-IT-FOTO-ANJAY-MABAR/main/Money%20Bags.png",
     ["Frostborn Shark"]          = NP .. "9.png",
     ["Crystal Goliath"]          = NP .. "11.png",
