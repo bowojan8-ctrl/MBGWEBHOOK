@@ -138,13 +138,14 @@ local SecretFishList = {
     "Sunken Hadalith", "Trench Warden", "Caeruleum Razerback", "Two-headed shark", "Ragnarex",
     "Colossal Shipwreck Crab", "Astrelle", "Moonwake Ray", "Astralune", "Starglass Guardian",
     "Pelagon", "Crimson Dreadtusk", "Riftborn Arowana", "Stormshell Brute", "Pyrocoil",
-    "Wintertusk Mammofin", "Ashen Kingfish", "Tribunal Withering Core", "ELEMENTAL HYDRA", "OVERLORD HYDRA",
+    "Wintertusk Mammofin", "Ashen Kingfish", "Tribunal Withering Core", "ELEMENTAL HYDRA", "OVERLORD HYDRA", 
+    "Everbloom", "Mr Money Bags",
 }
 
 local ForgottenList = {
     "ELEMENTAL HYDRA", "OVERLORD HYDRA", "Iridesca", "Frostbite Leviathan", "Fluorivane",
     "Cerulean Dragon", "Crystalline Behemoth", "Trench Warden", "Ragnarex",
-    "Astralune", "Crimson Dreadtusk", "Sea Eater", "Thunderzilla",
+    "Astralune", "Crimson Dreadtusk", "Sea Eater", "Thunderzilla", "Everbloom",
 }
 
 local MutasiList = {
