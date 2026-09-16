@@ -371,12 +371,12 @@ local FishImageURL = {
     ["treasure hunt"]            = "https://raw.githubusercontent.com/bowojan8-ctrl/FISH-IT-FOTO-ANJAY-MABAR/main/Treasure.png",
     ["Caustic Maw"]              = "https://raw.githubusercontent.com/bowojan8-ctrl/FISH-IT-FOTO-ANJAY-MABAR/main/97.png",
     ["Aurora"]                   = "https://raw.githubusercontent.com/bowojan8-ctrl/FISH-IT-FOTO-ANJAY-MABAR/main/99.png",
-    ["Coral Reaper"]             = "https://raw.githubusercontent.com/bowojan8-ctrl/FISH-IT-FOTO-ANJAY-MABAR/main/",
-    ["Trench Warden"]            = "https://raw.githubusercontent.com/bowojan8-ctrl/FISH-IT-FOTO-ANJAY-MABAR/main/",
-    ["Caeruleum Razerback"]      = "https://raw.githubusercontent.com/bowojan8-ctrl/FISH-IT-FOTO-ANJAY-MABAR/main/",
-    ["Two-headed shark"]         = "https://raw.githubusercontent.com/bowojan8-ctrl/FISH-IT-FOTO-ANJAY-MABAR/main/",
-    ["Ragnarex"]                 = "https://raw.githubusercontent.com/bowojan8-ctrl/FISH-IT-FOTO-ANJAY-MABAR/main/",
-    ["Colossal Shipwreck Crab"]  = "https://raw.githubusercontent.com/bowojan8-ctrl/FISH-IT-FOTO-ANJAY-MABAR/main/",
+    ["Coral Reaper"]             = "https://raw.githubusercontent.com/bowojan8-ctrl/FISH-IT-FOTO-ANJAY-MABAR/main/CoralReaper.png",
+    ["Trench Warden"]            = "https://raw.githubusercontent.com/bowojan8-ctrl/FISH-IT-FOTO-ANJAY-MABAR/main/TrenchWarden.png",
+    ["Caeruleum Razerback"]      = "https://raw.githubusercontent.com/bowojan8-ctrl/FISH-IT-FOTO-ANJAY-MABAR/main/CureleamBarbak.png",
+    ["Two-headed shark"]         = "https://raw.githubusercontent.com/bowojan8-ctrl/FISH-IT-FOTO-ANJAY-MABAR/main/TwoHeadedShark.png",
+    ["Ragnarex"]                 = "https://raw.githubusercontent.com/bowojan8-ctrl/FISH-IT-FOTO-ANJAY-MABAR/main/Ragnarex.png",
+    ["Colossal Shipwreck Crab"]  = "https://raw.githubusercontent.com/bowojan8-ctrl/FISH-IT-FOTO-ANJAY-MABAR/main/ColShipCrab.png",
     -- NOTE: nama file "Astrlele.png" ini keliatan kayak typo (harusnya "Astrelle.png"?) --
     -- cek lagi nama file yang beneran ke-upload di repo new-pisit-image, kalau salah nanti
     -- gambarnya gak muncul kayak kasus Glacial Serpent kemarin.
