@@ -296,7 +296,7 @@ local FishChanceData = {
     ["Mr Money Bags"]             = "1 in 4M",
 }
 
-local NP = "https://raw.githubusercontent.com/revkatomy-max/new-pisit-image/main/"
+local NP = "https://raw.githubusercontent.com/bowojan8-ctrl/FISH-IT-FOTO-ANJAY-MABAR/main"
 
 local FishImageURL = {
     ["Everbloom"]                = "https://raw.githubusercontent.com/bowojan8-ctrl/FISH-IT-FOTO-ANJAY-MABAR/main/Everbloom.WEBP",
