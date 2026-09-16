@@ -389,14 +389,14 @@ local FishImageURL = {
     ["Crimson Dreadtusk"]        = NP .. "CrimsonDreadtusk.png",
     ["Stormshell Brute"]         = NP .. "StormshellBrute.png",
     ["Pyrocoil"]                 = NP .. "Pyrocoil.png",
-    ["Wintertusk Mammofin"]      = "https://raw.githubusercontent.com/revkatomy-max/new-pisit-image/main/113.png",
-    ["ELEMENTAL HYDRA"]          = "https://raw.githubusercontent.com/revkatomy-max/new-pisit-image/main/51076.png",
-    ["OVERLORD HYDRA"]           = "https://raw.githubusercontent.com/bowojan8-ctrl/FISH-IT-FOTO-ANJAY-MABAR/main/IMG_2315.jpeg",
-    ["Ashen Kingfish"]           = "https://raw.githubusercontent.com/bowojan8-ctrl/FISH-IT-FOTO-ANJAY-MABAR/main/Ashen%20Kingfish.PNG",
-    ["Tribunal Withering Core"]  = "https://raw.githubusercontent.com/bowojan8-ctrl/FISH-IT-FOTO-ANJAY-MABAR/main/Tribunal%20Withering%20Core.PNG",
+    ["Wintertusk Mammofin"]      = NP .. "WintertuskMammofin.png",
+    ["ELEMENTAL HYDRA"]          = NP .. "ElementalHydra.png",
+    ["OVERLORD HYDRA"]           = NP .. "OVERLORDHYDRA.png",
+    ["Ashen Kingfish"]           = NP .. "AshenKingfish.png",
+    ["Tribunal Withering Core"]  = NP .. "TribunalWitheringCore.png",
     -- TODO: tambahin URL gambar buat "Shiny Hammerhead Shark" di sini biar thumbnail
     -- Mythic Fish Detected muncul, contoh:
-    -- ["Shiny Hammerhead Shark"] = NP .. "namafile.png",
+    -- ["Shiny Hammerhead Shark"] = NP .. "ShinyHammerheadShark.png",
 }
 
 
