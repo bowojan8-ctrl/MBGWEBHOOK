@@ -394,9 +394,7 @@ local FishImageURL = {
     ["OVERLORD HYDRA"]           = NP .. "OVERLORDHYDRA.png",
     ["Ashen Kingfish"]           = NP .. "AshenKingfish.png",
     ["Tribunal Withering Core"]  = NP .. "TribunalWitheringCore.png",
-    -- TODO: tambahin URL gambar buat "Shiny Hammerhead Shark" di sini biar thumbnail
-    -- Mythic Fish Detected muncul, contoh:
-    -- ["Shiny Hammerhead Shark"] = NP .. "ShinyHammerheadShark.png",
+    ["Shiny Hammerhead Shark"]   = NP .. "ShinyHammerheadShark.png",
 }
 
 
